@@ -13,6 +13,7 @@
 
 .container {
   display: block;
+  width: 50%;
 }
 
 .banner h1 {
@@ -38,4 +39,47 @@
 .btn-ghost:hover {
   opacity: 1;
 }
+
+h1 {
+  text-align: center;
+}
+
+a {
+  color: black;
+  font-family: 'Roboto', sans-serif;
+}
+
+a:hover {
+  text-decoration: none;
+  color: black ;
+  
+}
+
+.btn btn-success {
+  padding: 100px;
+}
+
+h1 {
+  padding: 50px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.buttons {
+  text-align: center;
+  margin-top: 20px;
+}
+
+span {
+  padding-left: 40px;
+  font-family: 'Roboto';
+}
+
+.comment {
+  text-align: center;
+  font-style: italic;
+  padding: 20px;
+  font-family: 'Mate SC', serif;
+  margin: 5px
+}
+
 

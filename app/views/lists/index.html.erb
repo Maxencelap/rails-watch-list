@@ -3,17 +3,19 @@
     THE BEST MOVIES LISTS 
   </span>
 </nav>
-<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://images-eu.ssl-images-amazon.com/images/I/81V3oh8q1aL.png);">
-  <div class="container">
-    <h1><%= link_to "Create your list", new_list_path, class: "btn btn-ghost"%></h1>
-  </div>
-</div>
 
+    <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://images-eu.ssl-images-amazon.com/images/I/81V3oh8q1aL.png);">
+    <div class="container">
+        <h1><%= link_to "Create your list", new_list_path, class: "btn btn-ghost"%></h1>
+    </div>
+    </div>
 
+<div class= lists>
     <% @lists.each do |list| %>
-    <div class="card">
-  <div class="card-body" style="text-align: center">
-    <%= link_to list.name, list_path(list) %>
-  </div>
+        <div class="card">
+            <div class="card-body" style="text-align: center">
+                <%= link_to list.name, list_path(list) %>
+            </div>
         </div>
     <% end %>
+</div>
